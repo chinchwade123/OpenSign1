@@ -222,7 +222,7 @@ app.get('/', function (req, res) {
 });
 
 if (!process.env.TESTING) {
-  const port = process.env.PORT || 8080;
+  const port = process.env.PORT || 8081;
   const httpServer = http.createServer(app);
   // Set the Keep-Alive and headers timeout to 100 seconds
   httpServer.keepAliveTimeout = 100000; // in milliseconds
